@@ -1,0 +1,18 @@
+<div class="nav col-sm-2 sidebar">
+  <img id="navimg" class="center-block" src="../assets/images/drops_logo.png" alt="">
+  <ul class="nav-items">
+    <li>
+      {{#link-to 'dashboard.home'}}{{fa-icon "home"}} Home{{/link-to}}
+    </li>
+    <li>
+      {{#link-to 'dashboard.donors'}}{{fa-icon "users"}} Donors{{/link-to}}
+    </li>
+    <li>
+      {{#link-to 'dashboard.charities'}}{{fa-icon "heart"}} Charities{{/link-to}}
+    </li>
+    <li>
+      {{#link-to 'dashboard.add'}}{{fa-icon "plus-circle"}} Add Charity{{/link-to}}
+    </li>
+  </ul>
+</div>
+{{outlet}}
