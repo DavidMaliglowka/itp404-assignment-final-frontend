@@ -8,7 +8,7 @@ export default Ember.Route.extend({
   },
   model: function() {
     return Ember.$.ajax({
-      url: 'http://localhost:5000/api/charities'
+      url: ENV.APP.apiEndpoint + 'api/charities'
     }).then(function(json) {
       return json.data;
     });

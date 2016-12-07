@@ -1,4 +1,5 @@
 import Ember from 'ember';
+import ENV from 'frontend/config/environment';
 
 export default Ember.Controller.extend({
 actions: {
@@ -12,7 +13,7 @@ actions: {
 
     var promise = Ember.$.ajax({
       type: 'post',
-      url: 'http://localhost:5000/api/charities',
+      url: ENV.APP.apiEndpoint + 'api/charities',
       data: {
         name: name,
         category: category,
